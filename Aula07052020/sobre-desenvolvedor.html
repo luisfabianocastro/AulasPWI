@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvedor</title>
+
+    <style>
+        .container{
+            max-width: 960px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .card{
+            background-color: #fff;
+            padding: 25px;
+            margin-top: 15px;
+
+            /*
+            margin-left: 100px;
+            margin-right: 100px;
+            */
+
+            border-radius: 10px;
+        }
+
+        #titulo-site{
+            color: saddlebrown;
+        }
+
+        .barra-topo{
+            height: 20px;
+            background-color: saddlebrown;
+        }
+
+        .text-center{
+            text-align: center;
+        }
+
+        .titulo-pagina{
+            color: red;
+        }
+
+        .barra{
+            background-color: saddlebrown;
+            height: 100px;
+            width: 100%;
+            
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+            position: static;
+            top: 0;
+
+        }
+
+        .foto{
+            width: 150px;
+            position: absolute;
+            padding: 20px;
+        }
+
+        .foto img{
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .centralizado{
+            text-align: ;
+        }
+
+        .nome-desenvolvedor{
+            padding: 30px;
+            margin-left: 180px;
+        }
+
+        .nome-desenvolvedor h1{
+            color: #ffffff;
+            font-size: 35px;
+        }
+
+        .dados-desenvolvedor{
+           margin-top: 100px;
+           padding: 35px;
+
+           border-left: 10px solid red;
+           border-top-left-radius: 10px;
+           border-bottom-left-radius: 10px;
+        }
+
+        .dados-tabela{
+           padding: 10px;
+           padding-bottom: 15px; 
+        }
+
+        .dados-tabela a {
+           font-size: 20px;
+           color: saddlebrown 
+        }
+
+        .dados-curso a {
+            font-size: 20px;
+            color: saddlebrown;
+        }
+
+        .dados-cidade a {
+            font-size: 20px;
+            color: saddlebrown;
+        }
+
+        *{
+            /* RESET DA PÁGINA */
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #8b827d;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+
+        header{
+            position: sticky;
+            top: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .topo{
+            background-color: #fff;
+            height: 80px;
+            text-align: center;
+        }
+
+        .logo{
+            width: 150px;
+            float: left;
+            padding: 5px;
+        }
+
+        #img-logo{
+            width: 50%;    
+        }
+
+        .titulo{
+            display: inline-block;
+            margin: 25px auto;
+        }
+
+        .barra-topo{
+            height: 20px;
+            background-color: saddlebrown;
+        }
+
+        .dados-curso{
+           padding: 10px;
+           padding-bottom: 15px; 
+        }
+
+        .dados-cidade{
+           padding: 10px;
+           padding-bottom: 15px; 
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    <header>
+      <div class="topo">
+          <div class="container">
+              <div class="logo">
+                  <img id="img-logo" src="img/logo.png" alt="Logo da página">
+              </div>
+              <h1 class="titulo">
+                  <a id="titulo-site" href="https://www.tudogostoso.com.br/" target="_blank">RECEITAS DO  KTRONN</a>
+              </h1>
+          </div> <!--Fim do container-->
+      </div>
+      <div class="barra-topo"></div>
+    </header>
+
+    <div class="container">
+
+        <div class="card text-center">
+            <h1 class="titulo-pagina">SOBRE O DESENVOLVEDOR</h1>
+        </div>
+       
+        <div class="card">
+
+            <div class="barra">
+                <div class="foto">
+                    <img src="img/foto-pwi.jpg" alt="foto">                   
+                </div>
+
+                <div class="nome-desenvolvedor">
+                    <h1>Luis Fabiano de Castro</h1>
+                </div>
+
+            </div> <!-- Fim da barra -->
+
+            <div class="dados-desenvolvedor">
+                <table>
+                   <tr>
+                      <td>
+                        <img src="img/at.png" alt="at">
+                      </td>
+                      <td class="dados-tabela">
+                          <a href="mailto:luis-fabianocastro@hotmail.com">luis-fabianocastro@hotmail.com</a>
+                      </td>
+                   </tr> 
+
+                   <tr>
+                    <td>
+                      <img src="img/github.png" alt="github">
+                    </td>
+                    <td class="dados-tabela">
+                        <a href="https://github.com/luisfabianocastro" target="_blank">https://github.com/luisfabianocastro</a>
+                    </td>
+                 </tr>
+                 
+                 <tr>
+                     <td>
+                         <img src="img/desktop-classic.png" alt="desktop-classic">
+                     </td>
+                     <td class="dados-curso">
+                         <a>Técnico em Desenvolvimento de Sistemas Integrado ao Ensino Médio</a>
+                         </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <img src="img/home-group.png" alt="home-group">
+                    </td>
+                    <td class="dados-cidade">
+                        <a>Macatuba-SP</a>
+                    </td>
+                </tr>
+                </table>
+            </div>
+
+        </div>    
+      
+    </div> <!-- Fim do container -->
+
+
+</body>
+</html>
